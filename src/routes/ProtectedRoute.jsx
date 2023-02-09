@@ -9,7 +9,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
 
   useEffect(() => {
     const tokenIsValid = jwtDecoder(token);
-    console.log('isValid', tokenIsValid);
     if (!tokenIsValid) {
       return navigate('/login');
     }
@@ -19,7 +18,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
     return <div>Loading...</div>;
   }
 
-  console.log(isAuthenticated);
   // If authorized, return an outlet that will render child elements
   // If not, return element that will navigate to login page
   return isAuthenticated ? <Outlet /> : <Navigate to='/login' />;
