@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Description
 
-_Esse projeto foi criado para solucionar um problema de autenticação com a biblioteca react-router-dom v6 onde criei um custom hook responsável pela camada de autenticação da aplicação._
+_This project was created to solve an auth problem with the react-router-dom v6 library where I created a custom hook responsible for the authentication layer of the application._
 
 ## Development setup
 
